@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 6%
+    padding-top: 10%
 }
 #fondo{
     background: rgb(238,245,212);
@@ -142,7 +142,12 @@ h3{
     font-style: normal;
     border-radius: 20px;
 }
-
+#boton:hover{
+    transition: .5s ease;
+    opacity: 1;
+    padding: 8px;
+    background-color: rgb(80, 40, 14);
+}
 #btn{
     padding-left: 100px;
     padding-top: 20px;
