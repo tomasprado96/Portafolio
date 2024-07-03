@@ -9,11 +9,20 @@ body{
 background-color: linear-gradient(91deg, rgba(96,150,91,1) 0%, rgba(122,179,101,1) 27%, rgba(197,212,121,1) 77%, rgba(215,227,155,1) 100%);
 }
 
+body {
+    opacity: 0; /* Inicialmente ocultar el contenido */
+    transition: opacity 1s ease-in-out; /* Transición suave de opacidad */
+  }
+  
+  body.loaded {
+    opacity: 1; /* Mostrar el contenido gradualmente */
+  }
+
 #caja-principal{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 10%
+    padding-top: 6%
 }
 #fondo{
     background: rgb(238,245,212);
@@ -40,10 +49,10 @@ background-color: linear-gradient(91deg, rgba(96,150,91,1) 0%, rgba(122,179,101,
 }
 
 #nombre{
-    color: rgb(23, 119, 47);
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 600;
-    font-style: normal;
+    color: rgb(119, 74, 23);
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
     padding-top: 2px;
     display: flex;
     justify-content: center;
@@ -51,28 +60,35 @@ background-color: linear-gradient(91deg, rgba(96,150,91,1) 0%, rgba(122,179,101,
 
 #coso{
     color: rgb(12, 77, 28);
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 600;
-    font-style: normal;
+    font-family: "Open Sans", sans-serif;
+  font-size: medium;
+  font-weight: 500;
+  font-style: normal;
     margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
 }
 
 #redes{
-    height: 10%;
-    width: 5px;
     display: flex;
     flex-direction: row;
-    padding-left: 50px;
+    padding-left: 25%;
+    padding-bottom: 14px;
 }
 
 .icon{
-    padding-right: 10px;
+    padding-right: 12px;
+    width: 50px;
+    
+}
+
+.icon:hover{
+    transition: .5s ease;
+    width: 52px;
+    opacity: 1;
+    filter: contrast(50%);
 }
 
 #foto2{
-    width: 400px;
+    width: 105%;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -86,6 +102,49 @@ background-color: linear-gradient(91deg, rgba(96,150,91,1) 0%, rgba(122,179,101,
 }
 
 #grande{
-    padding-left: 100px;
+    padding-left: 140px;
 }
 
+#lenguajes{
+    display: flex;
+    flex-direction: row;
+    padding-left: 128px;
+    padding-top: 20px;
+}
+
+#texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:110px;
+    padding-top: 10px;
+}
+
+h3{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(119, 74, 23);
+}
+
+#boton{
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(119, 74, 23);
+    text-decoration: none;
+    color: aliceblue;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 20px;
+}
+
+#btn{
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
